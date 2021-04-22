@@ -2,15 +2,17 @@ package page;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.switchTo;
 import static io.qameta.allure.Allure.step;
 
 public class FeedbackPage {
 
     public void openFeedbackPage() {
         step("Открытие сообщества поддрежки", () -> {
-            $("[data-qa = mainmenu_help]").click();
-            $("[data-qa = mainmenu_copiny]").click();
-            $(".community-title").shouldHave(text("Сообщество поддержки"));
+            $("[data-qa=mainmenu_help]", 1).click();
+            $("[data-qa=mainmenu_copiny]").click();
+            switchTo().window(1);
+            $("[class=community-title]").shouldHave(text("Сообщество поддержки"));
         });
     }
 

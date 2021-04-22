@@ -38,6 +38,7 @@ public class HeadHunterRuTest extends TestBase {
     @Test
     void knowledgeBaseTest() {
         mainPage.openPage();
+        feedbackPage.openFeedbackPage();
         knowledgeBasePage.openKnowledgeBasePage();
         knowledgeBasePage.knowledgeBaseBlockPage();
     }
