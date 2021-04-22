@@ -1,9 +1,6 @@
 package page;
 
-import com.codeborne.selenide.Configuration;
-
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 
@@ -11,8 +8,8 @@ public class FeedbackPage {
 
     public void openFeedbackPage() {
         step("Открытие сообщества поддрежки", () -> {
-            $("[data-qa = mainmenu_help]").waitUntil(visible, 10000).click();
-            $("[data-qa = mainmenu_copiny]").waitUntil(visible, 10000).click();
+            $("[data-qa = mainmenu_help]").click();
+            $("[data-qa = mainmenu_copiny]").click();
             $(".community-title").shouldHave(text("Сообщество поддержки"));
         });
     }
