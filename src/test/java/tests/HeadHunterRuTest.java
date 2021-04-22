@@ -17,23 +17,27 @@ public class HeadHunterRuTest extends TestBase {
 
     @Test
     void  openFeedbackPageTest() {
+        mainPage.openPage();
         feedbackPage.openFeedbackPage();
     }
 
     @Test
     void topNavigationTest() {
+        mainPage.openPage();
         feedbackPage.openFeedbackPage();
         feedbackPage.topNavigation();
     }
 
     @Test
     void welcomeMessageFeedbackTest() {
+        mainPage.openPage();
         feedbackPage.openFeedbackPage();
         feedbackPage.welcomeMessagePage();
     }
 
     @Test
     void knowledgeBaseTest() {
+        mainPage.openPage();
         knowledgeBasePage.openKnowledgeBasePage();
         knowledgeBasePage.knowledgeBaseBlockPage();
     }
