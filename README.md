@@ -10,15 +10,15 @@
 ![Selenoid](src/test/resources/Selenoid.png)
 ![Allure_Report](src/test/resources/Allure_Report.png)
 
-### Allure report
+## Allure report
 ![Allure](src/test/resources/Alure1.jpg)
 ![Allure](src/test/resources/Alure2.jpg)
 
-### Video
+## Video
 ![Video](src/test/resources/video.mp4)
 
-### Jenkins
+## Jenkins
 https://jenkins.autotests.cloud/job/c05-ebogdanovaa-homework11/
 
-### Telegram
+## Telegram
 ![Telegram](src/test/resources/telegram.jpg)
