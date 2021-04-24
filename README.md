@@ -15,7 +15,7 @@
 ![Allure](src/test/resources/Alure2.jpg)
 
 ## Video
-![Video](src/test/resources/video.mp4)
+![Video](src/test/resources/video.gif)
 
 ## Jenkins
 https://jenkins.autotests.cloud/job/c05-ebogdanovaa-homework11/
