@@ -11,8 +11,8 @@
 ![Allure_Report](src/test/resources/Allure_Report.png)
 
 ### Allure report
-![Allure](src/test/resources/Allure1.jpg)
-![Allure](src/test/resources/Allure2.jpg)
+![Allure](src/test/resources/Alure1.jpg)
+![Allure](src/test/resources/Alure2.jpg)
 
 ### Video
 ![Video](src/test/resources/video.mp4)
