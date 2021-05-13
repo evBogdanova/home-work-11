@@ -5,7 +5,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.switchTo;
 import static io.qameta.allure.Allure.step;
 
-public class FeedbackPage {
+public class FeedbackSteps {
 
     public void openFeedbackPage() {
         step("Открытие сообщества поддрежки", () -> {
@@ -16,7 +16,13 @@ public class FeedbackPage {
         });
     }
 
-    public void topNavigation() {
+    public void feedbackTitleTest() {
+        step("Проверка заголовка страницы Сообщество поддержки", () -> {
+            $("[class=community-title]").shouldHave(text("Сообщество поддержки"));
+        });
+    }
+
+    public void topNavigationTest() {
         step("Проверка наличия вкладок в блоке навигации", () -> {
             $("#top_navigation").shouldHave(text("База знаний"),
                     text("Темы"),
@@ -25,7 +31,7 @@ public class FeedbackPage {
         });
     }
 
-    public void welcomeMessagePage() {
+    public void welcomeMessageTest() {
         step("Проверка содержимого приветсвенного сообщения", () -> {
             $(".welcomeMessageWidget")
                     .shouldHave(text("Рады приветствовать вас в Сообществе поддержки пользователей hh.ru"));

@@ -1,45 +1,40 @@
 package tests;
 
 import org.junit.jupiter.api.Test;
-import page.FeedbackPage;
-import page.KnowledgeBasePage;
-import page.MainPage;
 
 public class HeadHunterRuTest extends TestBase {
-    MainPage mainPage = new MainPage();
-    FeedbackPage feedbackPage = new FeedbackPage();
-    KnowledgeBasePage knowledgeBasePage = new KnowledgeBasePage();
 
     @Test
     void openMainPageTest() {
-        mainPage.openPage();
+        mainSteps.openPage();
     }
 
     @Test
     void  openFeedbackPageTest() {
-        mainPage.openPage();
-        feedbackPage.openFeedbackPage();
+        mainSteps.openPage();
+        feedbackSteps.openFeedbackPage();
     }
 
     @Test
     void topNavigationTest() {
-        mainPage.openPage();
-        feedbackPage.openFeedbackPage();
-        feedbackPage.topNavigation();
+        mainSteps.openPage();
+        feedbackSteps.openFeedbackPage();
+        feedbackSteps.topNavigationTest();
     }
 
     @Test
     void welcomeMessageFeedbackTest() {
-        mainPage.openPage();
-        feedbackPage.openFeedbackPage();
-        feedbackPage.welcomeMessagePage();
+        mainSteps.openPage();
+        feedbackSteps.openFeedbackPage();
+        feedbackSteps.feedbackTitleTest();
+        feedbackSteps.welcomeMessageTest();
     }
 
     @Test
     void knowledgeBaseTest() {
-        mainPage.openPage();
-        feedbackPage.openFeedbackPage();
-        knowledgeBasePage.openKnowledgeBasePage();
-        knowledgeBasePage.knowledgeBaseBlockPage();
+        mainSteps.openPage();
+        feedbackSteps.openFeedbackPage();
+        knowledgeBaseSteps.openKnowledgeBasePage();
+        knowledgeBaseSteps.knowledgeBaseBlockPage();
     }
 }
