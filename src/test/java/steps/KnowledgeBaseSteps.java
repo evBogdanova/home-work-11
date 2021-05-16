@@ -1,4 +1,4 @@
-package page;
+package steps;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
@@ -7,7 +7,7 @@ import static io.qameta.allure.Allure.step;
 public class KnowledgeBaseSteps {
     public void openKnowledgeBasePage() {
         step("Открытие страницы базы знаний", () -> {
-            $("#top_navigation").$("[someattribute='email number']").click();
+            $("[#tiles-title]",1).click();
         });
     }
 

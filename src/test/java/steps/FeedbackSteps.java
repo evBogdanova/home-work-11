@@ -1,4 +1,4 @@
-package page;
+package steps;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
@@ -12,17 +12,16 @@ public class FeedbackSteps {
             $("[data-qa=mainmenu_help]", 1).click();
             $("[data-qa=mainmenu_copiny]").click();
             switchTo().window(1);
-            $("[class=community-title]").shouldHave(text("Сообщество поддержки"));
         });
     }
 
-    public void feedbackTitleTest() {
+    public void checkFeedbackTitle() {
         step("Проверка заголовка страницы Сообщество поддержки", () -> {
             $("[class=community-title]").shouldHave(text("Сообщество поддержки"));
         });
     }
 
-    public void topNavigationTest() {
+    public void checkTabsInTopNavigation() {
         step("Проверка наличия вкладок в блоке навигации", () -> {
             $("#top_navigation").shouldHave(text("База знаний"),
                     text("Темы"),
@@ -31,7 +30,7 @@ public class FeedbackSteps {
         });
     }
 
-    public void welcomeMessageTest() {
+    public void checkWelcomeMessage() {
         step("Проверка содержимого приветсвенного сообщения", () -> {
             $(".welcomeMessageWidget")
                     .shouldHave(text("Рады приветствовать вас в Сообществе поддержки пользователей hh.ru"));

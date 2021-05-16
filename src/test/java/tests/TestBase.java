@@ -6,10 +6,11 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import page.FeedbackSteps;
-import page.KnowledgeBaseSteps;
-import page.MainSteps;
+import steps.FeedbackSteps;
+import steps.KnowledgeBaseSteps;
+import steps.MainSteps;
 
 import static com.codeborne.selenide.WebDriverRunner.closeWebDriver;
 import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
