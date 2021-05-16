@@ -7,7 +7,7 @@ import static io.qameta.allure.Allure.step;
 public class KnowledgeBaseSteps {
     public void openKnowledgeBasePage() {
         step("Открытие страницы базы знаний", () -> {
-            $("[#tiles-title]",1).click();
+            $("[.tiles-title]",1).click();
         });
     }
 
