@@ -12,7 +12,7 @@ public class KnowledgeBaseSteps {
         });
     }
 
-    public void knowledgeBaseBlockPage() {
+    public void checkBlockKnowledgeBase() {
         step("Проверка блоков в Базе знаний", () ->{
             $(".wrap-container").shouldHave(text("Работодателям"));
         });

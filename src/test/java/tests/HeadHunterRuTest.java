@@ -35,6 +35,6 @@ public class HeadHunterRuTest extends TestBase {
         mainSteps.openPage();
         feedbackSteps.openFeedbackPage();
         knowledgeBaseSteps.openKnowledgeBasePage();
-        knowledgeBaseSteps.knowledgeBaseBlockPage();
+        knowledgeBaseSteps.checkBlockKnowledgeBase();
     }
 }
