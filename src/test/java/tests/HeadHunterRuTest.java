@@ -6,33 +6,34 @@ public class HeadHunterRuTest extends TestBase {
 
     @Test
     void openMainPageTest() {
-        mainSteps.openPage();
+        mainSteps.openMainPage();
+        mainSteps.checkTitleOnMainPage();
     }
 
     @Test
     void  openFeedbackPageTest() {
-        mainSteps.openPage();
+        mainSteps.openMainPage();
         feedbackSteps.openFeedbackPage();
         feedbackSteps.checkFeedbackTitle();
     }
 
     @Test
     void topNavigationTest() {
-        mainSteps.openPage();
+        mainSteps.openMainPage();
         feedbackSteps.openFeedbackPage();
         feedbackSteps.checkTabsInTopNavigation();
     }
 
     @Test
     void welcomeMessageFeedbackTest() {
-        mainSteps.openPage();
+        mainSteps.openMainPage();
         feedbackSteps.openFeedbackPage();
         feedbackSteps.checkWelcomeMessage();
     }
 
     @Test
     void knowledgeBaseTest() {
-        mainSteps.openPage();
+        mainSteps.openMainPage();
         feedbackSteps.openFeedbackPage();
         knowledgeBaseSteps.openKnowledgeBasePage();
         knowledgeBaseSteps.checkBlockKnowledgeBase();

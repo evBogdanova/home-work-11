@@ -7,9 +7,14 @@ import static io.qameta.allure.Allure.step;
 
 public class MainSteps {
 
-    public void openPage() {
+    public void openMainPage() {
         step("Открытие сайта hh.ru", () -> {
             open("https://hh.ru");
+        });
+    }
+
+    public void checkTitleOnMainPage() {
+        step("Проверка заголовка на главной странице", () -> {
             $(".supernova-dashboard-header").shouldHave(text("Работа найдется для каждого"));
         });
     }
